@@ -1,23 +1,49 @@
-SLR(1) Parser, Step by Step
-Compiler Design Lab, slot L37 + L38
-Ragunandhan T (24BCE0721) · Suyambulingam (24BCE0726) · Guruprasad V (24BCE0761)
+# SLR(1) Parser
+## Step by Step Compiler Design Lab
 
-OPEN IT
-  Online:  https://claude.ai/artifact/XiLWtpewKGKkncjFG71BFA
-  Offline: double-click SLR-Parser.html (one file, works in any browser; fonts need internet)
+**Team Members:**
+- Anushanth L G — 24BCE2094
+- Niraj Kanna — 24BCE2324
 
-HOW TO USE
-  1. Type your grammar, one production per row (a new row appears as you type).
-     Example:  S -> AA   and   A -> aA | b
-  2. Type the input string to parse, for example  aabb
-  3. Press "Build parser".
-  4. Teach: press "Next step" to build FIRST/FOLLOW, the LR(0) item sets, the SLR(1) table,
-     check conflicts and parse the input, one step at a time with the reason for each step.
-  5. Practice: solve the whole worksheet yourself from scratch, then press "Check" on each
-     part; every wrong entry is marked with the reason. "Show answer" fills a part.
+**Course:** Compiler Design Lab  
+**Slot:** L37 + L38
 
-FOLDERS
-  SLR-Parser.html   the app, everything in one file
-  docs/             DESIGN.md (architecture and algorithms), VIVA_QUESTIONS.md
-  source/           source code: final/index.html, js/ (engine), tests/
-                    run the tests with:  node source/tests/run-tests.js
+### Open the Application
+
+**Online:** [SLR(1) Parser](https://claude.ai/artifact/XiLWtpewKGKkncjFG71BFA)
+
+**Offline:** Double-click `SLR-Parser.html` to open it in any web browser. The application works offline; fonts require an internet connection.
+
+## How to Use
+
+1. **Enter the grammar:** Type your grammar, one production per row. A new row appears as you type.
+
+   Example:
+   ```
+   S -> AA
+   A -> aA | b
+   ```
+
+2. **Enter the input string:** Type the string you want to parse.
+
+   Example: `aabb`
+
+3. **Build the parser:** Click **Build parser** to generate the parser.
+
+4. **Learn step by step:** Click **Next step** to construct FIRST and FOLLOW sets, LR(0) item sets, and the SLR(1) parsing table. Check for conflicts and follow the parsing process step by step, with explanations for each stage.
+
+5. **Practice:** Complete the worksheet yourself, then click **Check** for each section to verify your answers. Incorrect entries are marked with explanations. Use **Show answer** to reveal the correct answers.
+
+## Project Structure
+
+- `SLR-Parser.html` — The standalone application.
+- `docs/` — Design documentation and viva questions.
+- `source/` — Source code, including the application engine and tests.
+
+### Running the Tests
+
+Run the following command from the project directory:
+
+```bash
+node source/tests/run-tests.js
+```
