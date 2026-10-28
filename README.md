@@ -6,7 +6,7 @@
 - Niraj Kanna — 24BCE2324
 
 **Course:** Compiler Design Lab  
-**Slot:** L37 + L38
+
 
 ### Open the Application
 
